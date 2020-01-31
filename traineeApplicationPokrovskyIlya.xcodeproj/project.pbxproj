@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F08A2B42399241200DED390 /* IProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F08A2B32399241200DED390 /* IProfileService.swift */; };
+		8F08A2B62399244A00DED390 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F08A2B52399244A00DED390 /* ProfileService.swift */; };
+		8F08A2B92399454600DED390 /* ILocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F08A2B82399454600DED390 /* ILocationService.swift */; };
+		8F08A2BB2399456000DED390 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F08A2BA2399456000DED390 /* LocationService.swift */; };
+		8F0E5EF02379B61600C27125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E5EEF2379B61600C27125 /* AppDelegate.swift */; };
+		8F0E5EF22379B61600C27125 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E5EF12379B61600C27125 /* SplashViewController.swift */; };
+		8F0E5EF52379B61600C27125 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5EF32379B61600C27125 /* Splash.storyboard */; };
+		8F0E5EF72379B61800C27125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5EF62379B61800C27125 /* Assets.xcassets */; };
+		8F0E5EFA2379B61800C27125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5EF82379B61800C27125 /* LaunchScreen.storyboard */; };
+		8F0E5F08237C304800C27125 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E5F07237C304800C27125 /* Aliases.swift */; };
+		8F0E5F0C237C336A00C27125 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5F0B237C336A00C27125 /* GoogleService-Info.plist */; };
+		8F0E5F11237C412800C27125 /* AuthPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E5F0F237C412800C27125 /* AuthPickerViewController.swift */; };
+		8F0E5F12237C412800C27125 /* AuthPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5F10237C412800C27125 /* AuthPickerViewController.xib */; };
+		8F0E5F15237C436500C27125 /* EmailEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E5F13237C436500C27125 /* EmailEntryViewController.swift */; };
+		8F0E5F16237C436500C27125 /* EmailEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5F14237C436500C27125 /* EmailEntryViewController.xib */; };
+		8F0E5F1C237D819600C27125 /* PasswordSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E5F1A237D819600C27125 /* PasswordSignInViewController.swift */; };
+		8F0E5F1D237D819600C27125 /* PasswordSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5F1B237D819600C27125 /* PasswordSignInViewController.xib */; };
+		8F40A7A2238546FF00CF04B5 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A79C238546FF00CF04B5 /* Map.swift */; };
+		8F40A7A3238546FF00CF04B5 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A79D238546FF00CF04B5 /* MapInteractor.swift */; };
+		8F40A7A4238546FF00CF04B5 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A79E238546FF00CF04B5 /* MapPresenter.swift */; };
+		8F40A7A5238546FF00CF04B5 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A79F238546FF00CF04B5 /* MapRouter.swift */; };
+		8F40A7A6238546FF00CF04B5 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F40A7A0238546FF00CF04B5 /* MapViewController.storyboard */; };
+		8F40A7A7238546FF00CF04B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7A1238546FF00CF04B5 /* MapViewController.swift */; };
+		8F40A7A9238556AA00CF04B5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F40A7A8238556AA00CF04B5 /* Colors.xcassets */; };
+		8F40A7B3238569E100CF04B5 /* Massages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7AD238569E100CF04B5 /* Massages.swift */; };
+		8F40A7B4238569E100CF04B5 /* MassagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7AE238569E100CF04B5 /* MassagesInteractor.swift */; };
+		8F40A7B5238569E100CF04B5 /* MassagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7AF238569E100CF04B5 /* MassagesPresenter.swift */; };
+		8F40A7B6238569E100CF04B5 /* MassagesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7B0238569E100CF04B5 /* MassagesRouter.swift */; };
+		8F40A7B7238569E100CF04B5 /* MassagesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F40A7B1238569E100CF04B5 /* MassagesViewController.storyboard */; };
+		8F40A7B8238569E100CF04B5 /* MassagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7B2238569E100CF04B5 /* MassagesViewController.swift */; };
+		8F40A7C123857E3000CF04B5 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7BB23857E3000CF04B5 /* Users.swift */; };
+		8F40A7C223857E3000CF04B5 /* UsersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7BC23857E3000CF04B5 /* UsersInteractor.swift */; };
+		8F40A7C323857E3000CF04B5 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7BD23857E3000CF04B5 /* UsersPresenter.swift */; };
+		8F40A7C423857E3000CF04B5 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7BE23857E3000CF04B5 /* UsersRouter.swift */; };
+		8F40A7C523857E3000CF04B5 /* UsersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F40A7BF23857E3000CF04B5 /* UsersViewController.storyboard */; };
+		8F40A7C623857E3000CF04B5 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7C023857E3000CF04B5 /* UsersViewController.swift */; };
+		8F40A7CD23857E4600CF04B5 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7C723857E4600CF04B5 /* Posts.swift */; };
+		8F40A7CE23857E4600CF04B5 /* PostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7C823857E4600CF04B5 /* PostsInteractor.swift */; };
+		8F40A7CF23857E4600CF04B5 /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7C923857E4600CF04B5 /* PostsPresenter.swift */; };
+		8F40A7D023857E4600CF04B5 /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7CA23857E4600CF04B5 /* PostsRouter.swift */; };
+		8F40A7D123857E4600CF04B5 /* PostsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F40A7CB23857E4600CF04B5 /* PostsViewController.storyboard */; };
+		8F40A7D223857E4600CF04B5 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40A7CC23857E4600CF04B5 /* PostsViewController.swift */; };
+		8F495D7C239A93CA00744593 /* IAvatarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F495D7B239A93CA00744593 /* IAvatarRepository.swift */; };
+		8F495D7E239A941700744593 /* FirebaseAvatarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F495D7D239A941700744593 /* FirebaseAvatarRepository.swift */; };
+		8F4AF86723868D0200A2B04F /* ISideMenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4AF86623868D0200A2B04F /* ISideMenuRepository.swift */; };
+		8F4AF86923868D2800A2B04F /* SideMenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4AF86823868D2800A2B04F /* SideMenuRepository.swift */; };
+		8F50F5DC23A246D000698E5B /* IUsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50F5DB23A246D000698E5B /* IUsersRepository.swift */; };
+		8F50F5DE23A2471300698E5B /* RealtimeDatabaseUsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50F5DD23A2471300698E5B /* RealtimeDatabaseUsersRepository.swift */; };
+		8F50F5E023A250CD00698E5B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50F5DF23A250CD00698E5B /* R.generated.swift */; };
+		8F52C0472382C44500781F68 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52C0412382C44500781F68 /* SideMenu.swift */; };
+		8F52C0482382C44500781F68 /* SideMenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52C0422382C44500781F68 /* SideMenuInteractor.swift */; };
+		8F52C0492382C44500781F68 /* SideMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52C0432382C44500781F68 /* SideMenuPresenter.swift */; };
+		8F52C04A2382C44500781F68 /* SideMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52C0442382C44500781F68 /* SideMenuRouter.swift */; };
+		8F52C04B2382C44500781F68 /* SideMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F52C0452382C44500781F68 /* SideMenuViewController.storyboard */; };
+		8F52C04C2382C44500781F68 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52C0462382C44500781F68 /* SideMenuViewController.swift */; };
+		8F54DF2623A10CE5001D8974 /* ISideMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F54DF2523A10CE5001D8974 /* ISideMenuDelegate.swift */; };
+		8F5AE65A2387F52B0077E563 /* ProfileChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AE6542387F52B0077E563 /* ProfileChanges.swift */; };
+		8F5AE65B2387F52B0077E563 /* ProfileChangesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AE6552387F52B0077E563 /* ProfileChangesInteractor.swift */; };
+		8F5AE65C2387F52B0077E563 /* ProfileChangesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AE6562387F52B0077E563 /* ProfileChangesPresenter.swift */; };
+		8F5AE65D2387F52B0077E563 /* ProfileChangesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AE6572387F52B0077E563 /* ProfileChangesRouter.swift */; };
+		8F5AE65E2387F52B0077E563 /* ProfileChangesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5AE6582387F52B0077E563 /* ProfileChangesViewController.storyboard */; };
+		8F5AE65F2387F52B0077E563 /* ProfileChangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AE6592387F52B0077E563 /* ProfileChangesViewController.swift */; };
+		8F5AE66623880B860077E563 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AE66523880B860077E563 /* FirebaseAuthService.swift */; };
+		8F5AE66923880DE20077E563 /* IAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AE66823880DE20077E563 /* IAuthService.swift */; };
+		8F61B79723A8E5AB00F8B210 /* IUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61B79623A8E5AB00F8B210 /* IUserViewModel.swift */; };
+		8F61D0182384003C00C889B1 /* ICurrentUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61D0172384003C00C889B1 /* ICurrentUserRepository.swift */; };
+		8F61D01B238400E300C889B1 /* FirebaseUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61D01A238400E300C889B1 /* FirebaseUserRepository.swift */; };
+		8F61D01E2384042000C889B1 /* IViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61D01D2384042000C889B1 /* IViewLifeCycle.swift */; };
+		8F675B09239FA50300FA6AF2 /* ILocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F675B08239FA50300FA6AF2 /* ILocationDelegate.swift */; };
+		8F69BE79238E858D00C88847 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69BE78238E858D00C88847 /* User.swift */; };
+		8F6A0E4823AA5B230069CC09 /* IUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A0E4723AA5B230069CC09 /* IUser.swift */; };
+		8F6A0E4A23AA5CF70069CC09 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A0E4923AA5CF70069CC09 /* CustomError.swift */; };
+		8F6ACBF0238BDC4E00587F85 /* IAlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACBEF238BDC4E00587F85 /* IAlertHelper.swift */; };
+		8F6ACBFB238C145F00587F85 /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACBF5238C145F00587F85 /* ChangeEmail.swift */; };
+		8F6ACBFC238C145F00587F85 /* ChangeEmailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACBF6238C145F00587F85 /* ChangeEmailInteractor.swift */; };
+		8F6ACBFD238C145F00587F85 /* ChangeEmailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACBF7238C145F00587F85 /* ChangeEmailPresenter.swift */; };
+		8F6ACBFE238C145F00587F85 /* ChangeEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACBF8238C145F00587F85 /* ChangeEmailRouter.swift */; };
+		8F6ACBFF238C145F00587F85 /* ChangeEmailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6ACBF9238C145F00587F85 /* ChangeEmailViewController.storyboard */; };
+		8F6ACC00238C145F00587F85 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACBFA238C145F00587F85 /* ChangeEmailViewController.swift */; };
+		8F6ACC08238C147E00587F85 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACC02238C147E00587F85 /* ChangePassword.swift */; };
+		8F6ACC09238C147E00587F85 /* ChangePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACC03238C147E00587F85 /* ChangePasswordInteractor.swift */; };
+		8F6ACC0A238C147E00587F85 /* ChangePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACC04238C147E00587F85 /* ChangePasswordPresenter.swift */; };
+		8F6ACC0B238C147E00587F85 /* ChangePasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACC05238C147E00587F85 /* ChangePasswordRouter.swift */; };
+		8F6ACC0C238C147E00587F85 /* ChangePasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6ACC06238C147E00587F85 /* ChangePasswordViewController.storyboard */; };
+		8F6ACC0D238C147E00587F85 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6ACC07238C147E00587F85 /* ChangePasswordViewController.swift */; };
+		8F6EA260239536C1007AC691 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EA25F239536C1007AC691 /* Validator.swift */; };
+		8F6EA26323953F81007AC691 /* ILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EA26223953F81007AC691 /* ILoader.swift */; };
+		8F6EA2682395457A007AC691 /* PKHUD+ILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EA2672395457A007AC691 /* PKHUD+ILoader.swift */; };
+		8F6EB48423A7B1440018E35A /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EB48323A7B1440018E35A /* UsersTableViewCell.swift */; };
+		8F8737CD237DA717008353E1 /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8737CB237DA717008353E1 /* PasswordRecoveryViewController.swift */; };
+		8F8737CE237DA717008353E1 /* PasswordRecoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8737CC237DA717008353E1 /* PasswordRecoveryViewController.xib */; };
+		8FD5B521237EB9F500D01AEC /* PasswordSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5B51F237EB9F500D01AEC /* PasswordSignUpViewController.swift */; };
+		8FD5B522237EB9F500D01AEC /* PasswordSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD5B520237EB9F500D01AEC /* PasswordSignUpViewController.xib */; };
+		9AB22F651DB1C5A3579F23C0 /* Pods_traineeApplicationPokrovskyIlya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BD997B2D0E2F2E445EBC30 /* Pods_traineeApplicationPokrovskyIlya.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F0FB28613A785960E0D3913 /* Pods-traineeApplicationPokrovskyIlya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traineeApplicationPokrovskyIlya.debug.xcconfig"; path = "Target Support Files/Pods-traineeApplicationPokrovskyIlya/Pods-traineeApplicationPokrovskyIlya.debug.xcconfig"; sourceTree = "<group>"; };
+		8F08A2B32399241200DED390 /* IProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IProfileService.swift; sourceTree = "<group>"; };
+		8F08A2B52399244A00DED390 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		8F08A2B82399454600DED390 /* ILocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILocationService.swift; sourceTree = "<group>"; };
+		8F08A2BA2399456000DED390 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		8F0E5EEC2379B61600C27125 /* traineeApplicationPokrovskyIlya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traineeApplicationPokrovskyIlya.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0E5EEF2379B61600C27125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F0E5EF12379B61600C27125 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8F0E5EF42379B61600C27125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
+		8F0E5EF62379B61800C27125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F0E5EF92379B61800C27125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F0E5EFB2379B61800C27125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F0E5F07237C304800C27125 /* Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
+		8F0E5F0B237C336A00C27125 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F0E5F0F237C412800C27125 /* AuthPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPickerViewController.swift; sourceTree = "<group>"; };
+		8F0E5F10237C412800C27125 /* AuthPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthPickerViewController.xib; sourceTree = "<group>"; };
+		8F0E5F13237C436500C27125 /* EmailEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailEntryViewController.swift; sourceTree = "<group>"; };
+		8F0E5F14237C436500C27125 /* EmailEntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailEntryViewController.xib; sourceTree = "<group>"; };
+		8F0E5F1A237D819600C27125 /* PasswordSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignInViewController.swift; sourceTree = "<group>"; };
+		8F0E5F1B237D819600C27125 /* PasswordSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordSignInViewController.xib; sourceTree = "<group>"; };
+		8F40A79C238546FF00CF04B5 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		8F40A79D238546FF00CF04B5 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		8F40A79E238546FF00CF04B5 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		8F40A79F238546FF00CF04B5 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		8F40A7A0238546FF00CF04B5 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		8F40A7A1238546FF00CF04B5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8F40A7A8238556AA00CF04B5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8F40A7AD238569E100CF04B5 /* Massages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Massages.swift; sourceTree = "<group>"; };
+		8F40A7AE238569E100CF04B5 /* MassagesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassagesInteractor.swift; sourceTree = "<group>"; };
+		8F40A7AF238569E100CF04B5 /* MassagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassagesPresenter.swift; sourceTree = "<group>"; };
+		8F40A7B0238569E100CF04B5 /* MassagesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassagesRouter.swift; sourceTree = "<group>"; };
+		8F40A7B1238569E100CF04B5 /* MassagesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MassagesViewController.storyboard; sourceTree = "<group>"; };
+		8F40A7B2238569E100CF04B5 /* MassagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassagesViewController.swift; sourceTree = "<group>"; };
+		8F40A7BB23857E3000CF04B5 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		8F40A7BC23857E3000CF04B5 /* UsersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInteractor.swift; sourceTree = "<group>"; };
+		8F40A7BD23857E3000CF04B5 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
+		8F40A7BE23857E3000CF04B5 /* UsersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
+		8F40A7BF23857E3000CF04B5 /* UsersViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersViewController.storyboard; sourceTree = "<group>"; };
+		8F40A7C023857E3000CF04B5 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		8F40A7C723857E4600CF04B5 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		8F40A7C823857E4600CF04B5 /* PostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsInteractor.swift; sourceTree = "<group>"; };
+		8F40A7C923857E4600CF04B5 /* PostsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		8F40A7CA23857E4600CF04B5 /* PostsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		8F40A7CB23857E4600CF04B5 /* PostsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostsViewController.storyboard; sourceTree = "<group>"; };
+		8F40A7CC23857E4600CF04B5 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		8F495D7B239A93CA00744593 /* IAvatarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAvatarRepository.swift; sourceTree = "<group>"; };
+		8F495D7D239A941700744593 /* FirebaseAvatarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAvatarRepository.swift; sourceTree = "<group>"; };
+		8F4AF86623868D0200A2B04F /* ISideMenuRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISideMenuRepository.swift; sourceTree = "<group>"; };
+		8F4AF86823868D2800A2B04F /* SideMenuRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRepository.swift; sourceTree = "<group>"; };
+		8F50F5DB23A246D000698E5B /* IUsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUsersRepository.swift; sourceTree = "<group>"; };
+		8F50F5DD23A2471300698E5B /* RealtimeDatabaseUsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDatabaseUsersRepository.swift; sourceTree = "<group>"; };
+		8F50F5DF23A250CD00698E5B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		8F52C0412382C44500781F68 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenu.swift; path = traineeApplicationPokrovskyIlya/UILayer/Modules/SideMenu.swift; sourceTree = SOURCE_ROOT; };
+		8F52C0422382C44500781F68 /* SideMenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuInteractor.swift; path = traineeApplicationPokrovskyIlya/UILayer/Modules/SideMenuInteractor.swift; sourceTree = SOURCE_ROOT; };
+		8F52C0432382C44500781F68 /* SideMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuPresenter.swift; path = traineeApplicationPokrovskyIlya/UILayer/Modules/SideMenuPresenter.swift; sourceTree = SOURCE_ROOT; };
+		8F52C0442382C44500781F68 /* SideMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuRouter.swift; path = traineeApplicationPokrovskyIlya/UILayer/Modules/SideMenuRouter.swift; sourceTree = SOURCE_ROOT; };
+		8F52C0452382C44500781F68 /* SideMenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SideMenuViewController.storyboard; path = traineeApplicationPokrovskyIlya/UILayer/Modules/SideMenuViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		8F52C0462382C44500781F68 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuViewController.swift; path = traineeApplicationPokrovskyIlya/UILayer/Modules/SideMenuViewController.swift; sourceTree = SOURCE_ROOT; };
+		8F54DF2523A10CE5001D8974 /* ISideMenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISideMenuDelegate.swift; sourceTree = "<group>"; };
+		8F5AE6542387F52B0077E563 /* ProfileChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChanges.swift; sourceTree = "<group>"; };
+		8F5AE6552387F52B0077E563 /* ProfileChangesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChangesInteractor.swift; sourceTree = "<group>"; };
+		8F5AE6562387F52B0077E563 /* ProfileChangesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChangesPresenter.swift; sourceTree = "<group>"; };
+		8F5AE6572387F52B0077E563 /* ProfileChangesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChangesRouter.swift; sourceTree = "<group>"; };
+		8F5AE6582387F52B0077E563 /* ProfileChangesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileChangesViewController.storyboard; sourceTree = "<group>"; };
+		8F5AE6592387F52B0077E563 /* ProfileChangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChangesViewController.swift; sourceTree = "<group>"; };
+		8F5AE66523880B860077E563 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		8F5AE66823880DE20077E563 /* IAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthService.swift; sourceTree = "<group>"; };
+		8F61B79623A8E5AB00F8B210 /* IUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserViewModel.swift; sourceTree = "<group>"; };
+		8F61D0172384003C00C889B1 /* ICurrentUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICurrentUserRepository.swift; sourceTree = "<group>"; };
+		8F61D01A238400E300C889B1 /* FirebaseUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserRepository.swift; sourceTree = "<group>"; };
+		8F61D01D2384042000C889B1 /* IViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IViewLifeCycle.swift; sourceTree = "<group>"; };
+		8F675B08239FA50300FA6AF2 /* ILocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILocationDelegate.swift; sourceTree = "<group>"; };
+		8F69BE78238E858D00C88847 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8F6A0E4723AA5B230069CC09 /* IUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUser.swift; sourceTree = "<group>"; };
+		8F6A0E4923AA5CF70069CC09 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		8F6ACBEF238BDC4E00587F85 /* IAlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAlertHelper.swift; sourceTree = "<group>"; };
+		8F6ACBF5238C145F00587F85 /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
+		8F6ACBF6238C145F00587F85 /* ChangeEmailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailInteractor.swift; sourceTree = "<group>"; };
+		8F6ACBF7238C145F00587F85 /* ChangeEmailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailPresenter.swift; sourceTree = "<group>"; };
+		8F6ACBF8238C145F00587F85 /* ChangeEmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailRouter.swift; sourceTree = "<group>"; };
+		8F6ACBF9238C145F00587F85 /* ChangeEmailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeEmailViewController.storyboard; sourceTree = "<group>"; };
+		8F6ACBFA238C145F00587F85 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
+		8F6ACC02238C147E00587F85 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		8F6ACC03238C147E00587F85 /* ChangePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordInteractor.swift; sourceTree = "<group>"; };
+		8F6ACC04238C147E00587F85 /* ChangePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordPresenter.swift; sourceTree = "<group>"; };
+		8F6ACC05238C147E00587F85 /* ChangePasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordRouter.swift; sourceTree = "<group>"; };
+		8F6ACC06238C147E00587F85 /* ChangePasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePasswordViewController.storyboard; sourceTree = "<group>"; };
+		8F6ACC07238C147E00587F85 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		8F6EA25F239536C1007AC691 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		8F6EA26223953F81007AC691 /* ILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoader.swift; sourceTree = "<group>"; };
+		8F6EA2672395457A007AC691 /* PKHUD+ILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PKHUD+ILoader.swift"; sourceTree = "<group>"; };
+		8F6EB48323A7B1440018E35A /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		8F8737CB237DA717008353E1 /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
+		8F8737CC237DA717008353E1 /* PasswordRecoveryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordRecoveryViewController.xib; sourceTree = "<group>"; };
+		8FD5B51F237EB9F500D01AEC /* PasswordSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpViewController.swift; sourceTree = "<group>"; };
+		8FD5B520237EB9F500D01AEC /* PasswordSignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordSignUpViewController.xib; sourceTree = "<group>"; };
+		B9BD997B2D0E2F2E445EBC30 /* Pods_traineeApplicationPokrovskyIlya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traineeApplicationPokrovskyIlya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEC7D64FEF141FEF9F5C6AB /* Pods-traineeApplicationPokrovskyIlya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traineeApplicationPokrovskyIlya.release.xcconfig"; path = "Target Support Files/Pods-traineeApplicationPokrovskyIlya/Pods-traineeApplicationPokrovskyIlya.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F0E5EE92379B61600C27125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB22F651DB1C5A3579F23C0 /* Pods_traineeApplicationPokrovskyIlya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BED8224FC784A2B84F7E4F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F0FB28613A785960E0D3913 /* Pods-traineeApplicationPokrovskyIlya.debug.xcconfig */,
+				FCEC7D64FEF141FEF9F5C6AB /* Pods-traineeApplicationPokrovskyIlya.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F79BBC3D90F052454EDAADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD997B2D0E2F2E445EBC30 /* Pods_traineeApplicationPokrovskyIlya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F08A2B2239923C600DED390 /* ProfileChangesService */ = {
+			isa = PBXGroup;
+			children = (
+				8F08A2B32399241200DED390 /* IProfileService.swift */,
+				8F08A2B52399244A00DED390 /* ProfileService.swift */,
+			);
+			path = ProfileChangesService;
+			sourceTree = "<group>";
+		};
+		8F08A2B72399452100DED390 /* MapService */ = {
+			isa = PBXGroup;
+			children = (
+				8F08A2B82399454600DED390 /* ILocationService.swift */,
+				8F08A2BA2399456000DED390 /* LocationService.swift */,
+				8F675B08239FA50300FA6AF2 /* ILocationDelegate.swift */,
+			);
+			path = MapService;
+			sourceTree = "<group>";
+		};
+		8F0E5EE32379B61600C27125 = {
+			isa = PBXGroup;
+			children = (
+				8F0E5EEE2379B61600C27125 /* traineeApplicationPokrovskyIlya */,
+				1BED8224FC784A2B84F7E4F8 /* Pods */,
+				3F79BBC3D90F052454EDAADE /* Frameworks */,
+				8F0E5EED2379B61600C27125 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F0E5EED2379B61600C27125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F0E5EEC2379B61600C27125 /* traineeApplicationPokrovskyIlya.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F0E5EEE2379B61600C27125 /* traineeApplicationPokrovskyIlya */ = {
+			isa = PBXGroup;
+			children = (
+				8F0E5F23237D8F9000C27125 /* Application */,
+				8F5AE66323880B380077E563 /* Repositories */,
+				8F61D0162383FFD200C889B1 /* Services */,
+				8F0E5F1E237D8EE600C27125 /* UILayer */,
+				8F50F5D923A23D2400698E5B /* Models */,
+				8F61D01C2384040400C889B1 /* Helpers */,
+			);
+			path = traineeApplicationPokrovskyIlya;
+			sourceTree = "<group>";
+		};
+		8F0E5F1E237D8EE600C27125 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EA26623954551007AC691 /* CustomViews */,
+				8F52C03223829E6D00781F68 /* LoginModule */,
+				8F52C0402382C42800781F68 /* SideMenuModule */,
+				8F52C0392382B02F00781F68 /* ContentModule */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		8F0E5F20237D8F0400C27125 /* CustomAuthPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8F0E5F0F237C412800C27125 /* AuthPickerViewController.swift */,
+				8F0E5F10237C412800C27125 /* AuthPickerViewController.xib */,
+			);
+			path = CustomAuthPickerView;
+			sourceTree = "<group>";
+		};
+		8F0E5F21237D8F3500C27125 /* CustomEmailEntryView */ = {
+			isa = PBXGroup;
+			children = (
+				8F0E5F13237C436500C27125 /* EmailEntryViewController.swift */,
+				8F0E5F14237C436500C27125 /* EmailEntryViewController.xib */,
+			);
+			path = CustomEmailEntryView;
+			sourceTree = "<group>";
+		};
+		8F0E5F22237D8F6D00C27125 /* CustomPaswordSignInView */ = {
+			isa = PBXGroup;
+			children = (
+				8F0E5F1A237D819600C27125 /* PasswordSignInViewController.swift */,
+				8F0E5F1B237D819600C27125 /* PasswordSignInViewController.xib */,
+			);
+			path = CustomPaswordSignInView;
+			sourceTree = "<group>";
+		};
+		8F0E5F23237D8F9000C27125 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8F50F5DF23A250CD00698E5B /* R.generated.swift */,
+				8F0E5EEF2379B61600C27125 /* AppDelegate.swift */,
+				8F0E5EF32379B61600C27125 /* Splash.storyboard */,
+				8F0E5EF82379B61800C27125 /* LaunchScreen.storyboard */,
+				8F0E5EF12379B61600C27125 /* SplashViewController.swift */,
+				8F0E5EF62379B61800C27125 /* Assets.xcassets */,
+				8F40A7A8238556AA00CF04B5 /* Colors.xcassets */,
+				8F0E5EFB2379B61800C27125 /* Info.plist */,
+				8F0E5F0B237C336A00C27125 /* GoogleService-Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8F40A79B238546C000CF04B5 /* MapModule */ = {
+			isa = PBXGroup;
+			children = (
+				8F40A79C238546FF00CF04B5 /* Map.swift */,
+				8F40A79D238546FF00CF04B5 /* MapInteractor.swift */,
+				8F40A79E238546FF00CF04B5 /* MapPresenter.swift */,
+				8F40A79F238546FF00CF04B5 /* MapRouter.swift */,
+				8F40A7A0238546FF00CF04B5 /* MapViewController.storyboard */,
+				8F40A7A1238546FF00CF04B5 /* MapViewController.swift */,
+			);
+			path = MapModule;
+			sourceTree = "<group>";
+		};
+		8F40A7AC238569B200CF04B5 /* MassagesModule */ = {
+			isa = PBXGroup;
+			children = (
+				8F40A7AD238569E100CF04B5 /* Massages.swift */,
+				8F40A7AE238569E100CF04B5 /* MassagesInteractor.swift */,
+				8F40A7AF238569E100CF04B5 /* MassagesPresenter.swift */,
+				8F40A7B0238569E100CF04B5 /* MassagesRouter.swift */,
+				8F40A7B1238569E100CF04B5 /* MassagesViewController.storyboard */,
+				8F40A7B2238569E100CF04B5 /* MassagesViewController.swift */,
+			);
+			path = MassagesModule;
+			sourceTree = "<group>";
+		};
+		8F40A7B923857DF800CF04B5 /* UsersModule */ = {
+			isa = PBXGroup;
+			children = (
+				8F40A7BB23857E3000CF04B5 /* Users.swift */,
+				8F40A7BC23857E3000CF04B5 /* UsersInteractor.swift */,
+				8F40A7BD23857E3000CF04B5 /* UsersPresenter.swift */,
+				8F40A7BE23857E3000CF04B5 /* UsersRouter.swift */,
+				8F40A7BF23857E3000CF04B5 /* UsersViewController.storyboard */,
+				8F40A7C023857E3000CF04B5 /* UsersViewController.swift */,
+			);
+			path = UsersModule;
+			sourceTree = "<group>";
+		};
+		8F40A7BA23857E0A00CF04B5 /* PostsModule */ = {
+			isa = PBXGroup;
+			children = (
+				8F40A7C723857E4600CF04B5 /* Posts.swift */,
+				8F40A7C823857E4600CF04B5 /* PostsInteractor.swift */,
+				8F40A7C923857E4600CF04B5 /* PostsPresenter.swift */,
+				8F40A7CA23857E4600CF04B5 /* PostsRouter.swift */,
+				8F40A7CB23857E4600CF04B5 /* PostsViewController.storyboard */,
+				8F40A7CC23857E4600CF04B5 /* PostsViewController.swift */,
+			);
+			path = PostsModule;
+			sourceTree = "<group>";
+		};
+		8F495D7A239A93A000744593 /* AvatarRepository */ = {
+			isa = PBXGroup;
+			children = (
+				8F495D7B239A93CA00744593 /* IAvatarRepository.swift */,
+				8F495D7D239A941700744593 /* FirebaseAvatarRepository.swift */,
+			);
+			path = AvatarRepository;
+			sourceTree = "<group>";
+		};
+		8F4AF86523868CD700A2B04F /* SideMenuRepository */ = {
+			isa = PBXGroup;
+			children = (
+				8F4AF86623868D0200A2B04F /* ISideMenuRepository.swift */,
+				8F4AF86823868D2800A2B04F /* SideMenuRepository.swift */,
+			);
+			path = SideMenuRepository;
+			sourceTree = "<group>";
+		};
+		8F4EFDAD238D2661009AAAEA /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				8F5AE6532387F4F90077E563 /* ProfileChangesMenu */,
+				8F6ACBF4238C143000587F85 /* ChangeEmail */,
+				8F6ACC01238C146500587F85 /* ChangePassword */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		8F50F5D923A23D2400698E5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F61B79623A8E5AB00F8B210 /* IUserViewModel.swift */,
+				8F6A0E4723AA5B230069CC09 /* IUser.swift */,
+				8F69BE78238E858D00C88847 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F50F5DA23A2431400698E5B /* UsersRepository */ = {
+			isa = PBXGroup;
+			children = (
+				8F50F5DB23A246D000698E5B /* IUsersRepository.swift */,
+				8F50F5DD23A2471300698E5B /* RealtimeDatabaseUsersRepository.swift */,
+			);
+			path = UsersRepository;
+			sourceTree = "<group>";
+		};
+		8F52C03223829E6D00781F68 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				8F0E5F20237D8F0400C27125 /* CustomAuthPickerView */,
+				8F0E5F21237D8F3500C27125 /* CustomEmailEntryView */,
+				8F0E5F22237D8F6D00C27125 /* CustomPaswordSignInView */,
+				8FD5B51E237EB95300D01AEC /* CustomPasswordSignUpView */,
+				8F8737CA237DA6CD008353E1 /* CustomPasswordRecoveryViewController */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		8F52C0392382B02F00781F68 /* ContentModule */ = {
+			isa = PBXGroup;
+			children = (
+				8F4EFDAD238D2661009AAAEA /* EditProfile */,
+				8F40A79B238546C000CF04B5 /* MapModule */,
+				8F40A7AC238569B200CF04B5 /* MassagesModule */,
+				8F40A7B923857DF800CF04B5 /* UsersModule */,
+				8F40A7BA23857E0A00CF04B5 /* PostsModule */,
+			);
+			path = ContentModule;
+			sourceTree = "<group>";
+		};
+		8F52C0402382C42800781F68 /* SideMenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				8F52C0412382C44500781F68 /* SideMenu.swift */,
+				8F52C0422382C44500781F68 /* SideMenuInteractor.swift */,
+				8F52C0432382C44500781F68 /* SideMenuPresenter.swift */,
+				8F52C0442382C44500781F68 /* SideMenuRouter.swift */,
+				8F52C0452382C44500781F68 /* SideMenuViewController.storyboard */,
+				8F52C0462382C44500781F68 /* SideMenuViewController.swift */,
+				8F54DF2523A10CE5001D8974 /* ISideMenuDelegate.swift */,
+			);
+			path = SideMenuModule;
+			sourceTree = "<group>";
+		};
+		8F5AE6532387F4F90077E563 /* ProfileChangesMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8F5AE6542387F52B0077E563 /* ProfileChanges.swift */,
+				8F5AE6552387F52B0077E563 /* ProfileChangesInteractor.swift */,
+				8F5AE6562387F52B0077E563 /* ProfileChangesPresenter.swift */,
+				8F5AE6572387F52B0077E563 /* ProfileChangesRouter.swift */,
+				8F5AE6582387F52B0077E563 /* ProfileChangesViewController.storyboard */,
+				8F5AE6592387F52B0077E563 /* ProfileChangesViewController.swift */,
+			);
+			path = ProfileChangesMenu;
+			sourceTree = "<group>";
+		};
+		8F5AE66323880B380077E563 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8F50F5DA23A2431400698E5B /* UsersRepository */,
+				8F495D7A239A93A000744593 /* AvatarRepository */,
+				8F61D019238400CA00C889B1 /* CurrentUserRepository */,
+				8F4AF86523868CD700A2B04F /* SideMenuRepository */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8F5AE66723880DA30077E563 /* FirebaseService */ = {
+			isa = PBXGroup;
+			children = (
+				8F5AE66823880DE20077E563 /* IAuthService.swift */,
+				8F5AE66523880B860077E563 /* FirebaseAuthService.swift */,
+			);
+			path = FirebaseService;
+			sourceTree = "<group>";
+		};
+		8F61D0162383FFD200C889B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F08A2B72399452100DED390 /* MapService */,
+				8F08A2B2239923C600DED390 /* ProfileChangesService */,
+				8F5AE66723880DA30077E563 /* FirebaseService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8F61D019238400CA00C889B1 /* CurrentUserRepository */ = {
+			isa = PBXGroup;
+			children = (
+				8F61D0172384003C00C889B1 /* ICurrentUserRepository.swift */,
+				8F61D01A238400E300C889B1 /* FirebaseUserRepository.swift */,
+			);
+			path = CurrentUserRepository;
+			sourceTree = "<group>";
+		};
+		8F61D01C2384040400C889B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8F0E5F07237C304800C27125 /* Aliases.swift */,
+				8F6EA25F239536C1007AC691 /* Validator.swift */,
+				8F6ACBEF238BDC4E00587F85 /* IAlertHelper.swift */,
+				8F61D01D2384042000C889B1 /* IViewLifeCycle.swift */,
+				8F6A0E4923AA5CF70069CC09 /* CustomError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8F6ACBF4238C143000587F85 /* ChangeEmail */ = {
+			isa = PBXGroup;
+			children = (
+				8F6ACBF5238C145F00587F85 /* ChangeEmail.swift */,
+				8F6ACBF6238C145F00587F85 /* ChangeEmailInteractor.swift */,
+				8F6ACBF7238C145F00587F85 /* ChangeEmailPresenter.swift */,
+				8F6ACBF8238C145F00587F85 /* ChangeEmailRouter.swift */,
+				8F6ACBF9238C145F00587F85 /* ChangeEmailViewController.storyboard */,
+				8F6ACBFA238C145F00587F85 /* ChangeEmailViewController.swift */,
+			);
+			path = ChangeEmail;
+			sourceTree = "<group>";
+		};
+		8F6ACC01238C146500587F85 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				8F6ACC02238C147E00587F85 /* ChangePassword.swift */,
+				8F6ACC03238C147E00587F85 /* ChangePasswordInteractor.swift */,
+				8F6ACC04238C147E00587F85 /* ChangePasswordPresenter.swift */,
+				8F6ACC05238C147E00587F85 /* ChangePasswordRouter.swift */,
+				8F6ACC06238C147E00587F85 /* ChangePasswordViewController.storyboard */,
+				8F6ACC07238C147E00587F85 /* ChangePasswordViewController.swift */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		8F6EA26623954551007AC691 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EA26223953F81007AC691 /* ILoader.swift */,
+				8F6EA2672395457A007AC691 /* PKHUD+ILoader.swift */,
+				8F6EB48323A7B1440018E35A /* UsersTableViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8F8737CA237DA6CD008353E1 /* CustomPasswordRecoveryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F8737CB237DA717008353E1 /* PasswordRecoveryViewController.swift */,
+				8F8737CC237DA717008353E1 /* PasswordRecoveryViewController.xib */,
+			);
+			path = CustomPasswordRecoveryViewController;
+			sourceTree = "<group>";
+		};
+		8FD5B51E237EB95300D01AEC /* CustomPasswordSignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				8FD5B51F237EB9F500D01AEC /* PasswordSignUpViewController.swift */,
+				8FD5B520237EB9F500D01AEC /* PasswordSignUpViewController.xib */,
+			);
+			path = CustomPasswordSignUpView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F0E5EEB2379B61600C27125 /* traineeApplicationPokrovskyIlya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F0E5EFE2379B61800C27125 /* Build configuration list for PBXNativeTarget "traineeApplicationPokrovskyIlya" */;
+			buildPhases = (
+				EC66E02EE1A50AE05A666133 /* [CP] Check Pods Manifest.lock */,
+				8F0E5F03237AE32400C27125 /* R.swift */,
+				8F0E5F06237AEEA800C27125 /* SwiftLint */,
+				8F0E5EE82379B61600C27125 /* Sources */,
+				8F0E5EE92379B61600C27125 /* Frameworks */,
+				8F0E5EEA2379B61600C27125 /* Resources */,
+				576CADE22AEE960AE7A877E6 /* [CP] Embed Pods Frameworks */,
+				64156C705ECAFB649F6EAF8C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = traineeApplicationPokrovskyIlya;
+			productName = traineeApplicationPokrovskyIlya;
+			productReference = 8F0E5EEC2379B61600C27125 /* traineeApplicationPokrovskyIlya.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F0E5EE42379B61600C27125 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ilya Pokrovsky";
+				TargetAttributes = {
+					8F0E5EEB2379B61600C27125 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8F0E5EE72379B61600C27125 /* Build configuration list for PBXProject "traineeApplicationPokrovskyIlya" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F0E5EE32379B61600C27125;
+			productRefGroup = 8F0E5EED2379B61600C27125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F0E5EEB2379B61600C27125 /* traineeApplicationPokrovskyIlya */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F0E5EEA2379B61600C27125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD5B522237EB9F500D01AEC /* PasswordSignUpViewController.xib in Resources */,
+				8F0E5EFA2379B61800C27125 /* LaunchScreen.storyboard in Resources */,
+				8F0E5F1D237D819600C27125 /* PasswordSignInViewController.xib in Resources */,
+				8F6ACBFF238C145F00587F85 /* ChangeEmailViewController.storyboard in Resources */,
+				8F0E5F0C237C336A00C27125 /* GoogleService-Info.plist in Resources */,
+				8F40A7C523857E3000CF04B5 /* UsersViewController.storyboard in Resources */,
+				8F6ACC0C238C147E00587F85 /* ChangePasswordViewController.storyboard in Resources */,
+				8F0E5F16237C436500C27125 /* EmailEntryViewController.xib in Resources */,
+				8F40A7A6238546FF00CF04B5 /* MapViewController.storyboard in Resources */,
+				8F5AE65E2387F52B0077E563 /* ProfileChangesViewController.storyboard in Resources */,
+				8F8737CE237DA717008353E1 /* PasswordRecoveryViewController.xib in Resources */,
+				8F40A7B7238569E100CF04B5 /* MassagesViewController.storyboard in Resources */,
+				8F0E5F12237C412800C27125 /* AuthPickerViewController.xib in Resources */,
+				8F52C04B2382C44500781F68 /* SideMenuViewController.storyboard in Resources */,
+				8F40A7D123857E4600CF04B5 /* PostsViewController.storyboard in Resources */,
+				8F0E5EF72379B61800C27125 /* Assets.xcassets in Resources */,
+				8F0E5EF52379B61600C27125 /* Splash.storyboard in Resources */,
+				8F40A7A9238556AA00CF04B5 /* Colors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		576CADE22AEE960AE7A877E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traineeApplicationPokrovskyIlya/Pods-traineeApplicationPokrovskyIlya-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traineeApplicationPokrovskyIlya/Pods-traineeApplicationPokrovskyIlya-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-traineeApplicationPokrovskyIlya/Pods-traineeApplicationPokrovskyIlya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64156C705ECAFB649F6EAF8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traineeApplicationPokrovskyIlya/Pods-traineeApplicationPokrovskyIlya-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traineeApplicationPokrovskyIlya/Pods-traineeApplicationPokrovskyIlya-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-traineeApplicationPokrovskyIlya/Pods-traineeApplicationPokrovskyIlya-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0E5F03237AE32400C27125 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
+		};
+		8F0E5F06237AEEA800C27125 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		EC66E02EE1A50AE05A666133 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-traineeApplicationPokrovskyIlya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F0E5EE82379B61600C27125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F40A7B6238569E100CF04B5 /* MassagesRouter.swift in Sources */,
+				8F8737CD237DA717008353E1 /* PasswordRecoveryViewController.swift in Sources */,
+				8F0E5EF22379B61600C27125 /* SplashViewController.swift in Sources */,
+				8F675B09239FA50300FA6AF2 /* ILocationDelegate.swift in Sources */,
+				8F6EA26323953F81007AC691 /* ILoader.swift in Sources */,
+				8F40A7C223857E3000CF04B5 /* UsersInteractor.swift in Sources */,
+				8F40A7B3238569E100CF04B5 /* Massages.swift in Sources */,
+				8F50F5DE23A2471300698E5B /* RealtimeDatabaseUsersRepository.swift in Sources */,
+				8F5AE65B2387F52B0077E563 /* ProfileChangesInteractor.swift in Sources */,
+				8F5AE65F2387F52B0077E563 /* ProfileChangesViewController.swift in Sources */,
+				8F6A0E4823AA5B230069CC09 /* IUser.swift in Sources */,
+				8F6ACC0B238C147E00587F85 /* ChangePasswordRouter.swift in Sources */,
+				8F69BE79238E858D00C88847 /* User.swift in Sources */,
+				8F40A7C623857E3000CF04B5 /* UsersViewController.swift in Sources */,
+				8F6ACC08238C147E00587F85 /* ChangePassword.swift in Sources */,
+				8F6EA2682395457A007AC691 /* PKHUD+ILoader.swift in Sources */,
+				8F5AE66923880DE20077E563 /* IAuthService.swift in Sources */,
+				8F6EB48423A7B1440018E35A /* UsersTableViewCell.swift in Sources */,
+				8F40A7C323857E3000CF04B5 /* UsersPresenter.swift in Sources */,
+				8F40A7B5238569E100CF04B5 /* MassagesPresenter.swift in Sources */,
+				8F52C0482382C44500781F68 /* SideMenuInteractor.swift in Sources */,
+				8F40A7A4238546FF00CF04B5 /* MapPresenter.swift in Sources */,
+				8F40A7A5238546FF00CF04B5 /* MapRouter.swift in Sources */,
+				8FD5B521237EB9F500D01AEC /* PasswordSignUpViewController.swift in Sources */,
+				8F08A2B62399244A00DED390 /* ProfileService.swift in Sources */,
+				8F40A7A7238546FF00CF04B5 /* MapViewController.swift in Sources */,
+				8F61D0182384003C00C889B1 /* ICurrentUserRepository.swift in Sources */,
+				8F52C0492382C44500781F68 /* SideMenuPresenter.swift in Sources */,
+				8F40A7B4238569E100CF04B5 /* MassagesInteractor.swift in Sources */,
+				8F61D01B238400E300C889B1 /* FirebaseUserRepository.swift in Sources */,
+				8F40A7D023857E4600CF04B5 /* PostsRouter.swift in Sources */,
+				8F495D7E239A941700744593 /* FirebaseAvatarRepository.swift in Sources */,
+				8F6ACC0D238C147E00587F85 /* ChangePasswordViewController.swift in Sources */,
+				8F6ACBF0238BDC4E00587F85 /* IAlertHelper.swift in Sources */,
+				8F50F5DC23A246D000698E5B /* IUsersRepository.swift in Sources */,
+				8F6ACC00238C145F00587F85 /* ChangeEmailViewController.swift in Sources */,
+				8F6ACBFC238C145F00587F85 /* ChangeEmailInteractor.swift in Sources */,
+				8F40A7CF23857E4600CF04B5 /* PostsPresenter.swift in Sources */,
+				8F50F5E023A250CD00698E5B /* R.generated.swift in Sources */,
+				8F5AE66623880B860077E563 /* FirebaseAuthService.swift in Sources */,
+				8F4AF86923868D2800A2B04F /* SideMenuRepository.swift in Sources */,
+				8F08A2BB2399456000DED390 /* LocationService.swift in Sources */,
+				8F6ACC09238C147E00587F85 /* ChangePasswordInteractor.swift in Sources */,
+				8F08A2B92399454600DED390 /* ILocationService.swift in Sources */,
+				8F6ACBFB238C145F00587F85 /* ChangeEmail.swift in Sources */,
+				8F6ACC0A238C147E00587F85 /* ChangePasswordPresenter.swift in Sources */,
+				8F08A2B42399241200DED390 /* IProfileService.swift in Sources */,
+				8F5AE65D2387F52B0077E563 /* ProfileChangesRouter.swift in Sources */,
+				8F40A7A2238546FF00CF04B5 /* Map.swift in Sources */,
+				8F0E5F15237C436500C27125 /* EmailEntryViewController.swift in Sources */,
+				8F40A7A3238546FF00CF04B5 /* MapInteractor.swift in Sources */,
+				8F6ACBFE238C145F00587F85 /* ChangeEmailRouter.swift in Sources */,
+				8F61D01E2384042000C889B1 /* IViewLifeCycle.swift in Sources */,
+				8F5AE65C2387F52B0077E563 /* ProfileChangesPresenter.swift in Sources */,
+				8F5AE65A2387F52B0077E563 /* ProfileChanges.swift in Sources */,
+				8F52C04C2382C44500781F68 /* SideMenuViewController.swift in Sources */,
+				8F40A7C123857E3000CF04B5 /* Users.swift in Sources */,
+				8F52C04A2382C44500781F68 /* SideMenuRouter.swift in Sources */,
+				8F4AF86723868D0200A2B04F /* ISideMenuRepository.swift in Sources */,
+				8F54DF2623A10CE5001D8974 /* ISideMenuDelegate.swift in Sources */,
+				8F52C0472382C44500781F68 /* SideMenu.swift in Sources */,
+				8F40A7CE23857E4600CF04B5 /* PostsInteractor.swift in Sources */,
+				8F0E5EF02379B61600C27125 /* AppDelegate.swift in Sources */,
+				8F40A7B8238569E100CF04B5 /* MassagesViewController.swift in Sources */,
+				8F40A7CD23857E4600CF04B5 /* Posts.swift in Sources */,
+				8F40A7D223857E4600CF04B5 /* PostsViewController.swift in Sources */,
+				8F6ACBFD238C145F00587F85 /* ChangeEmailPresenter.swift in Sources */,
+				8F61B79723A8E5AB00F8B210 /* IUserViewModel.swift in Sources */,
+				8F495D7C239A93CA00744593 /* IAvatarRepository.swift in Sources */,
+				8F0E5F11237C412800C27125 /* AuthPickerViewController.swift in Sources */,
+				8F6EA260239536C1007AC691 /* Validator.swift in Sources */,
+				8F40A7C423857E3000CF04B5 /* UsersRouter.swift in Sources */,
+				8F0E5F08237C304800C27125 /* Aliases.swift in Sources */,
+				8F6A0E4A23AA5CF70069CC09 /* CustomError.swift in Sources */,
+				8F0E5F1C237D819600C27125 /* PasswordSignInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F0E5EF32379B61600C27125 /* Splash.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F0E5EF42379B61600C27125 /* Base */,
+			);
+			name = Splash.storyboard;
+			sourceTree = "<group>";
+		};
+		8F0E5EF82379B61800C27125 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F0E5EF92379B61800C27125 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F0E5EFC2379B61800C27125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F0E5EFD2379B61800C27125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F0E5EFF2379B61800C27125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0FB28613A785960E0D3913 /* Pods-traineeApplicationPokrovskyIlya.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/traineeApplicationPokrovskyIlya/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Appus.traineeApplicationPokrovskyIlya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F0E5F002379B61800C27125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCEC7D64FEF141FEF9F5C6AB /* Pods-traineeApplicationPokrovskyIlya.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/traineeApplicationPokrovskyIlya/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Appus.traineeApplicationPokrovskyIlya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F0E5EE72379B61600C27125 /* Build configuration list for PBXProject "traineeApplicationPokrovskyIlya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0E5EFC2379B61800C27125 /* Debug */,
+				8F0E5EFD2379B61800C27125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F0E5EFE2379B61800C27125 /* Build configuration list for PBXNativeTarget "traineeApplicationPokrovskyIlya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0E5EFF2379B61800C27125 /* Debug */,
+				8F0E5F002379B61800C27125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F0E5EE42379B61600C27125 /* Project object */;
+}

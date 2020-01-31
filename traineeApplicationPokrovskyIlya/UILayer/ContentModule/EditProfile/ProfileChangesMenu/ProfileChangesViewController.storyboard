@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFh-JR-k59">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile Changes View Controller-->
+        <scene sceneID="5yw-RJ-AcC">
+            <objects>
+                <viewController id="dFh-JR-k59" customClass="ProfileChangesViewController" customModule="traineeApplicationPokrovskyIlya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8yS-y8-KPi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqW-Py-eoi">
+                                <rect key="frame" x="97" y="114" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="RLa-gl-afu"/>
+                                    <constraint firstAttribute="width" constant="180" id="h9b-kX-W1e"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changePhotoButtonPressed:" destination="dFh-JR-k59" eventType="touchUpInside" id="Poi-oc-eoa"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eyy-56-4R2">
+                                <rect key="frame" x="97" y="114" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="nlw-0W-CQ5"/>
+                                    <constraint firstAttribute="height" constant="180" id="xZk-fI-gXP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="90"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9m-sI-x8s">
+                                <rect key="frame" x="53" y="387" width="269" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aek-N1-jsf">
+                                <rect key="frame" x="33" y="456.5" width="309" height="33"/>
+                                <color key="backgroundColor" red="0.63878691379999997" green="0.40118369739999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="19"/>
+                                <state key="normal" title="CHANGE EMAIL">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeEmailButtonPressed:" destination="dFh-JR-k59" eventType="touchUpInside" id="HFD-iQ-gTd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dh-zq-H0I">
+                                <rect key="frame" x="33" y="504.5" width="309" height="33"/>
+                                <color key="backgroundColor" red="0.63878691379999997" green="0.40118369739999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="19"/>
+                                <state key="normal" title="CHANGE PASSWORD">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changePasswordButtonPressed:" destination="dFh-JR-k59" eventType="touchUpInside" id="pO2-yX-6tw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7k-wQ-zWO">
+                                <rect key="frame" x="53" y="344" width="269" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aek-N1-jsf" firstAttribute="top" secondItem="w9m-sI-x8s" secondAttribute="bottom" constant="50" id="1fE-Pt-zSr"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="w9m-sI-x8s" secondAttribute="trailing" constant="53" id="7Ag-5e-gLU"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="aek-N1-jsf" secondAttribute="trailing" constant="33" id="BpN-fx-0pp"/>
+                            <constraint firstItem="n7k-wQ-zWO" firstAttribute="top" secondItem="Eyy-56-4R2" secondAttribute="bottom" constant="50" id="C50-7b-Ai6"/>
+                            <constraint firstItem="fqW-Py-eoi" firstAttribute="top" secondItem="pQc-7P-Kzz" secondAttribute="top" constant="94" id="CYm-W5-LmC"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="Eyy-56-4R2" secondAttribute="trailing" constant="98" id="NaM-hn-NnY"/>
+                            <constraint firstItem="n7k-wQ-zWO" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="53" id="PA8-qu-C1j"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="n7k-wQ-zWO" secondAttribute="trailing" constant="53" id="QDh-Y9-Un4"/>
+                            <constraint firstItem="w9m-sI-x8s" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="53" id="U07-Yw-wb0"/>
+                            <constraint firstItem="0Dh-zq-H0I" firstAttribute="top" secondItem="aek-N1-jsf" secondAttribute="bottom" constant="15" id="W2n-lB-SHl"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="aek-N1-jsf" secondAttribute="trailing" constant="33" id="a52-bG-kKR"/>
+                            <constraint firstItem="aek-N1-jsf" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="33" id="bIM-Yn-gf4"/>
+                            <constraint firstItem="w9m-sI-x8s" firstAttribute="top" secondItem="n7k-wQ-zWO" secondAttribute="bottom" constant="15" id="k64-6N-lkD"/>
+                            <constraint firstItem="aek-N1-jsf" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="33" id="mvg-tH-FSe"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="0Dh-zq-H0I" secondAttribute="trailing" constant="33" id="mzA-6y-WVP"/>
+                            <constraint firstItem="Eyy-56-4R2" firstAttribute="top" secondItem="pQc-7P-Kzz" secondAttribute="top" constant="94" id="rKR-Ew-qe0"/>
+                            <constraint firstItem="fqW-Py-eoi" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="97" id="sQa-cg-Azk"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="fqW-Py-eoi" secondAttribute="trailing" constant="98" id="tj9-0l-mmO"/>
+                            <constraint firstItem="Eyy-56-4R2" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="97" id="vMR-g1-dj0"/>
+                            <constraint firstItem="0Dh-zq-H0I" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="33" id="xle-WU-HzG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pQc-7P-Kzz"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImage" destination="Eyy-56-4R2" id="Bfy-9c-wkg"/>
+                        <outlet property="emailLabel" destination="w9m-sI-x8s" id="XuN-EW-qcQ"/>
+                        <outlet property="usernameLabel" destination="n7k-wQ-zWO" id="QXU-Lx-3Gs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wH-bz-g6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250.40000000000001" y="92.203898050974516"/>
+        </scene>
+    </scenes>
+</document>

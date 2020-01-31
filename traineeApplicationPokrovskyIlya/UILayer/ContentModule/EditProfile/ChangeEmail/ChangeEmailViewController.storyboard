@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFh-JR-k59">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Change Email View Controller-->
+        <scene sceneID="5yw-RJ-AcC">
+            <objects>
+                <viewController id="dFh-JR-k59" customClass="ChangeEmailViewController" customModule="traineeApplicationPokrovskyIlya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8yS-y8-KPi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-Vz-KTl">
+                                <rect key="frame" x="30" y="404" width="315" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-qd-veE">
+                                <rect key="frame" x="30" y="442" width="315" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jl-ZY-Cag">
+                                <rect key="frame" x="30" y="519" width="315" height="33"/>
+                                <color key="backgroundColor" red="0.63878691379999997" green="0.40118369739999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="19"/>
+                                <state key="normal" title="Change email">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeEmailButtonPressed:" destination="dFh-JR-k59" eventType="touchUpInside" id="3EA-EX-eHY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-Gy-eVB">
+                                <rect key="frame" x="132" y="114" width="110" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="0RR-Do-ZxB"/>
+                                    <constraint firstAttribute="width" constant="110" id="6l5-9j-P4u"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="old email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GU9-wh-Y2T">
+                                <rect key="frame" x="30" y="376" width="315" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="kL9-Gy-eVB" secondAttribute="trailing" constant="133" id="445-ix-I39"/>
+                            <constraint firstItem="BzL-qd-veE" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="30" id="8JX-gt-OGf"/>
+                            <constraint firstItem="GU9-wh-Y2T" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="30" id="8rD-dp-ZnI"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="TFS-Vz-KTl" secondAttribute="trailing" constant="30" id="DqG-qg-v0Q"/>
+                            <constraint firstItem="4jl-ZY-Cag" firstAttribute="top" secondItem="BzL-qd-veE" secondAttribute="bottom" constant="47" id="Sbg-pI-eKD"/>
+                            <constraint firstItem="kL9-Gy-eVB" firstAttribute="top" secondItem="pQc-7P-Kzz" secondAttribute="top" constant="94" id="VFl-0N-o9o"/>
+                            <constraint firstItem="TFS-Vz-KTl" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="30" id="Z0V-Ps-q7t"/>
+                            <constraint firstItem="4jl-ZY-Cag" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="30" id="aob-zA-Zlw"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="GU9-wh-Y2T" secondAttribute="trailing" constant="30" id="brz-mJ-dVn"/>
+                            <constraint firstItem="TFS-Vz-KTl" firstAttribute="top" secondItem="GU9-wh-Y2T" secondAttribute="bottom" constant="8" id="fff-gE-ZOu"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="BzL-qd-veE" secondAttribute="trailing" constant="30" id="jTE-hT-px9"/>
+                            <constraint firstItem="pQc-7P-Kzz" firstAttribute="trailing" secondItem="4jl-ZY-Cag" secondAttribute="trailing" constant="30" id="o2Z-P8-587"/>
+                            <constraint firstItem="kL9-Gy-eVB" firstAttribute="leading" secondItem="pQc-7P-Kzz" secondAttribute="leading" constant="132" id="qxo-GI-LOt"/>
+                            <constraint firstItem="BzL-qd-veE" firstAttribute="top" secondItem="TFS-Vz-KTl" secondAttribute="bottom" constant="8" id="u4e-Pb-yrY"/>
+                            <constraint firstItem="GU9-wh-Y2T" firstAttribute="top" secondItem="kL9-Gy-eVB" secondAttribute="bottom" constant="99" id="v9N-Jl-ZOJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pQc-7P-Kzz"/>
+                    </view>
+                    <connections>
+                        <outlet property="newEmailTextField" destination="TFS-Vz-KTl" id="Nc9-9j-PKb"/>
+                        <outlet property="oldEmailLabel" destination="GU9-wh-Y2T" id="OPV-k4-6da"/>
+                        <outlet property="passwordTextField" destination="BzL-qd-veE" id="yVH-fA-Jap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wH-bz-g6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250.40000000000001" y="92.203898050974516"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_logo" width="100" height="163"/>
+    </resources>
+</document>
